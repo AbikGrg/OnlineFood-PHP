@@ -98,7 +98,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Update Menu</title>
+    <title>Update Packages</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -119,7 +119,8 @@ if(isset($_POST['submit']))           //if upload btn is pressed
             <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
                         
-                        <span><img src="images/icn.png" alt="homepage" class="dark-logo" /></span>
+                    <span><img src="../images/client-logo-4.png" alt="homepage" class="dark-logo" style='width:75px' /></span>
+
                     </a>
                 </div>
                 <div class="navbar-collapse">
@@ -154,21 +155,21 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                         <li> <a href="all_users.php">  <span><i class="fa fa-user f-s-20 "></i></span><span>Users</span></a></li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Restaurant</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_restaurant.php">All Restaurants</a></li>
+								<li><a href="all_restaurant.php">All locations</a></li>
 								<li><a href="add_category.php">Add Category</a></li>
-                                <li><a href="add_restaurant.php">Add Restaurant</a></li>
+                                <li><a href="add_restaurant.php">Add locations</a></li>
                                 
                             </ul>
                         </li>
                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">All packages</a></li>
+								<li><a href="add_menu.php">Add packages</a></li>
                               
                                 
                             </ul>
                         </li>
-						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Orders</span></a></li>
+						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Booking</span></a></li>
                          
                     </ul>
                 </nav>
@@ -194,7 +195,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 					    <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">Add Menu to Restaurant</h4>
+                                <h4 class="m-b-0 text-white">Add packages to location</h4>
                             </div>
                             <div class="card-body">
                                 <form action='' method='post'  enctype="multipart/form-data">
@@ -207,7 +208,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                         <div class="row p-t-20">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Dish Name</label>
+                                                    <label class="control-label">package Name</label>
                                                     <input type="text" name="d_name" value="<?php echo $roww['title'];?>" class="form-control" placeholder="Morzirella">
                                                    </div>
                                             </div>
@@ -225,7 +226,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label">Price </label>
-                                                    <input type="text" name="price" value="<?php echo $roww['price'];?>"  class="form-control" placeholder="$">
+                                                    <input type="text" name="price" value="<?php echo $roww['price'];?>"  class="form-control" placeholder="Rs">
                                                    </div>
                                             </div>
                                  
@@ -251,7 +252,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                                 <div class="form-group">
                                                     <label class="control-label">Select Category</label>
 													<select name="res_name" class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
-                                                        <option>--Select Restaurant--</option>
+                                                        <option>--Select location--</option>
                                                  <?php $ssql ="select * from restaurant";
 													$res=mysqli_query($db, $ssql); 
 													while($row=mysqli_fetch_array($res))  
@@ -279,7 +280,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                         </div>
                     </div>
 
-					<footer class="footer"> © 2022 - Online Food Ordering System </footer>
+					<footer class="footer"> © 2022 -TravelWonders </footer>
 					
                 </div>
              

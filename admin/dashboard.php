@@ -38,7 +38,7 @@ else
             <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
                         
-                        <span><img src="images/icn.png" alt="homepage" class="dark-logo" /></span>
+                        <span><img src="../images/client-logo-4.png" alt="homepage" class="dark-logo" style='width:75px' /></span>
                     </a>
                 </div>
 
@@ -74,23 +74,23 @@ else
                         </li>
                         <li class="nav-label">Log</li>
                         <li> <a href="all_users.php">  <span><i class="fa fa-user f-s-20 "></i></span><span>Users</span></a></li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Restaurant</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">locations</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_restaurant.php">All Restaurant</a></li>
+								<li><a href="all_restaurant.php">All locations</a></li>
 								<li><a href="add_category.php">Add Category</a></li>
-                                <li><a href="add_restaurant.php">Add Restaurant</a></li>
+                                <li><a href="add_restaurant.php">Add locations</a></li>
                                 
                             </ul>
                         </li>
-                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
+                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Packages</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">All Packages</a></li>
+								<li><a href="add_menu.php">Add Packages</a></li>
                               
                                 
                             </ul>
                         </li>
-						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Orders</span></a></li>
+						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Booked</span></a></li>
                          
                     </ul>
                 </nav>
@@ -123,7 +123,7 @@ else
 													$rws=mysqli_num_rows($result);
 													
 													echo $rws;?></h2>
-                                    <p class="m-b-0">Restaurants</p>
+                                    <p class="m-b-0">location</p>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@ else
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-cutlery f-s-40" aria-hidden="true"></i></span>
+                                    <!-- <span><i class="fa fa-cutlery f-s-40" aria-hidden="true"></i></span> -->
                                 </div>
                                 <div class="media-body media-text-right">
                                     <h2><?php $sql="select * from dishes";
@@ -141,7 +141,7 @@ else
 													$rws=mysqli_num_rows($result);
 													
 													echo $rws;?></h2>
-                                    <p class="m-b-0">Dishes</p>
+                                    <p class="m-b-0">Packages</p>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@ else
 													$rws=mysqli_num_rows($result);
 													
 													echo $rws;?></h2>
-                                    <p class="m-b-0">Total Orders</p>
+                                    <p class="m-b-0">Total Booking</p>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +197,7 @@ else
 													$rws=mysqli_num_rows($result);
 													
 													echo $rws;?></h2>
-                                    <p class="m-b-0">Restro Categories</p>
+                                    <p class="m-b-0">location Categories</p>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +215,7 @@ else
 													$rws=mysqli_num_rows($result);
 													
 													echo $rws;?></h2>
-                                    <p class="m-b-0">Processing Orders</p>
+                                    <p class="m-b-0"> Booking Processing </p>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +233,7 @@ else
 													$rws=mysqli_num_rows($result);
 													
 													echo $rws;?></h2>
-                                    <p class="m-b-0">Delivered Orders</p>
+                                    <p class="m-b-0">Booking done</p>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +253,7 @@ else
                                             $rws=mysqli_num_rows($result);
                                             
                                             echo $rws;?></h2>
-                                    <p class="m-b-0">Cancelled Orders</p>
+                                    <p class="m-b-0">Cancelled Booking</p>
                                 </div>
                             </div>
                         </div>

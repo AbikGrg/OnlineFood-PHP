@@ -114,7 +114,7 @@ if(isset($_POST['submit']))
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Add Menu</title>
+    <title>Add packages</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -249,7 +249,8 @@ if(isset($_POST['submit']))
                                             <div class="col-md-6">
                                                 <div class="form-group has-danger">
                                                     <label class="control-label">Description</label>
-                                                    <input type="text" name="about" class="form-control form-control-danger" >
+                                                    <!-- <input type="text" name="about" class="form-control form-control-danger" > -->
+                                                    <textarea id="comment" name="about" cols="45" rows="8" maxlength="65525" required="required" style="width: 566px; height: 369px;"></textarea>
                                                     </div>
                                             </div>
                                      

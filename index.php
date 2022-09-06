@@ -31,7 +31,7 @@ session_start();
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
                             <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Locations <span class="sr-only"></span></a> </li>
-                            
+                            <li class="nav-item"> <a class="nav-link active" href="recommend.php">Recommend Me <span class="sr-only"></span></a> </li>
                            
 							<?php
 						if(empty($_SESSION["user_id"])) // if user is not login
@@ -42,7 +42,7 @@ session_start();
 						else
 							{
 
-									
+                                echo  '<li class="nav-item"><a href="review.php" class="nav-link active">Review</a> </li>';
 									echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Packages</a> </li>';
 									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
 							}
@@ -267,7 +267,7 @@ session_start();
 
 
                         
-						$query_res= mysqli_query($db,"select * from popular LIMIT 10"); 
+						$query_res= mysqli_query($db,"select * from popular ORDER BY avg_rating DESC LIMIT 10"); 
                                 while($r=mysqli_fetch_array($query_res))
                                 {
                                         
@@ -276,9 +276,10 @@ session_start();
                                                 <div class="figure-wrap bg-image" data-image-src="'.$r['Image-URL'].'"></div>
                                                 <div class="content">
                                                     <h5><a href="dishes.php?res_id='.$r['rs_id'].'">'.$r['title'].'</a></h5>
-                                                    <div class="product-name">'.$r['destination'].'</div>
-                                                    <div class="product-name">'.$r['city'].'</div>
-                                                    <div class="product-name">'.$r['num_ratings'].'</div>
+                                                    <div class="product-name">Destination : '.$r['destination'].'</div>
+                                                    <div class="product-name">Location : '.$r['city'].'</div>
+                                                    <div class="product-name">Ratings : '.$r['avg_rating'].'</div>
+                                                    
                                                 </div>
                                                 
                                             </div>
@@ -290,9 +291,7 @@ session_start();
         </section>
 
 
-        <div class="locations">
-            <h1> Top Locations</h1>
-        </div>
+  
       
         <footer class="footer">
             <div class="container">

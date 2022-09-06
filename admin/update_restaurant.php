@@ -113,7 +113,7 @@ if(isset($_POST['submit']))
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Update Restaurant</title>
+    <title>Update Location</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -131,7 +131,8 @@ if(isset($_POST['submit']))
             <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
                         
-                        <span><img src="images/icn.png" alt="homepage" class="dark-logo" /></span>
+                    <span><img src="../images/client-logo-4.png" alt="homepage" class="dark-logo" style='width:75px' /></span>
+
                     </a>
                 </div>
                 <div class="navbar-collapse">
@@ -221,23 +222,23 @@ if(isset($_POST['submit']))
                         <li> <a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
                         <li class="nav-label">Log</li>
                         <li> <a href="all_users.php">  <span><i class="fa fa-user f-s-20 "></i></span><span>Users</span></a></li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Restaurant</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">locations</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_restaurant.php">All Restaurants</a></li>
+								<li><a href="all_restaurant.php">All location</a></li>
 								<li><a href="add_category.php">Add Category</a></li>
-                                <li><a href="add_restaurant.php">Add Restaurant</a></li>
+                                <li><a href="add_restaurant.php">Add location</a></li>
                                 
                             </ul>
                         </li>
-                      <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
+                      <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">packages</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">All packages</a></li>
+								<li><a href="add_menu.php">Add packages</a></li>
                               
                                 
                             </ul>
                         </li>
-						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Orders</span></a></li>
+						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Booking</span></a></li>
                          
                     </ul>
                 </nav>
@@ -266,7 +267,7 @@ if(isset($_POST['submit']))
 					    <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             
-                                <h4 class="m-b-0 ">Update Restaurant</h4>
+                                <h4 class="m-b-0 ">Update location</h4>
                             
                             <div class="card-body">
                                 <form action='' method='post'  enctype="multipart/form-data">
@@ -278,14 +279,14 @@ if(isset($_POST['submit']))
                                         <div class="row p-t-20">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Restaurant Name</label>
+                                                    <label class="control-label">location Name</label>
                                                     <input type="text" name="res_name" value="<?php echo $row['title'];  ?>" class="form-control" placeholder="John doe">
                                                    </div>
                                             </div>
                                    
                                             <div class="col-md-6">
                                                 <div class="form-group has-danger">
-                                                    <label class="control-label">Bussiness E-mail</label>
+                                                    <label class="control-label"> E-mail</label>
                                                     <input type="text" name="email" value="<?php echo $row['email'];  ?>"class="form-control form-control-danger" placeholder="example@gmail.com">
                                                     </div>
                                             </div>
@@ -386,7 +387,7 @@ if(isset($_POST['submit']))
 											
                                         </div>
                                        
-                                        <h3 class="box-title m-t-40">Restaurant Address</h3>
+                                        <h3 class="box-title m-t-40"> Address</h3>
                                         <hr>
                                         <div class="row">
                                             <div class="col-md-12 ">
@@ -408,7 +409,7 @@ if(isset($_POST['submit']))
                             </div>
                         </div>
                     </div>
-					<footer class="footer"> © 2022 - Online Food Ordering System</footer>
+					<footer class="footer"> © 2022 - TravelWonders</footer>
                 </div>
        
             </div>

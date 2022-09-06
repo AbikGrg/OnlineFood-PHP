@@ -40,7 +40,7 @@ window.print();
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Order Update</title>
+    <title>Booking Update</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -137,8 +137,8 @@ td, th {
       <td><b>Status</b></td>
       <td><select name="status" required="required" >
       <option value="">Select Status</option>
-      <option value="in process">On the way</option>
-    <option value="closed">Delivered</option>
+      <option value="in process">Booking</option>
+    <option value="closed">Booked</option>
 	 <option value="rejected">Cancelled</option>
         
       </select></td>

@@ -90,7 +90,8 @@ if(isset($_POST['submit'] ))
             <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
                         
-                        <span><img src="images/icn.png" alt="homepage" class="dark-logo" /></span>
+                    <span><img src="../images/client-logo-4.png" alt="homepage" class="dark-logo" style='width:75px' /></span>
+
                     </a>
                 </div>
                 <div class="navbar-collapse">
@@ -142,23 +143,23 @@ if(isset($_POST['submit'] ))
                         <li> <a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
                         <li class="nav-label">Log</li>
                         <li> <a href="all_users.php">  <span><i class="fa fa-user f-s-20 "></i></span><span>Users</span></a></li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Restaurant</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">location</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_restaurant.php">All Restaurants</a></li>
+								<li><a href="all_restaurant.php">All location</a></li>
 								<li><a href="add_category.php">Add Category</a></li>
-                                <li><a href="add_restaurant.php">Add Restaurant</a></li>
+                                <li><a href="add_restaurant.php">Add  location</a></li>
                                 
                             </ul>
                         </li>
-                      <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
+                      <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">packages</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">AllpPackage</a></li>
+								<li><a href="add_menu.php">Add packages</a></li>
                               
                                 
                             </ul>
                         </li>
-						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Orders</span></a></li>
+						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>booking</span></a></li>
 						
                          
                     </ul>
@@ -289,7 +290,7 @@ if(isset($_POST['submit'] ))
        
             </div>
       
-            <footer class="footer"> © 2022 - Online Food Ordering System </footer>
+            <footer class="footer"> © 2022 TravelWonders </footer>
         
         </div>
       
